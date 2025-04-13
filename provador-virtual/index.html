@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Provador Virtual</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    video, canvas {
+      position: absolute;
+      transform: scaleX(-1);
+    }
+    #glasses {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <video id="video" autoplay playsinline width="640" height="480"></video>
+  <canvas id="output" width="640" height="480"></canvas>
+  <img id="glasses" src="/juju.png" alt="óculos" />
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
